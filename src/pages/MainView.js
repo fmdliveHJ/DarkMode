@@ -3,6 +3,8 @@ import GlobalGnb from "../components/GlobalGnb";
 import GlobalHeader from "../components/GlobalHeader";
 import MainBody from "./MainBody";
 import styled from "styled-components";
+import MainBodyOP from "./MainBodyOP";
+import { Route, Routes } from "react-router-dom";
 
 const MainView = () => {
   const [dark, setDark] = useState("");
@@ -34,7 +36,14 @@ const MainView = () => {
       <GlobalGnb />
       <div style={{ width: "100%" }}>
         <GlobalHeader toggleDark={toggleDark} />
-        <MainBody />
+        <Routes>
+          <Route path="/MainBody" element={<MainBody />}>
+            MainBody
+          </Route>
+          <Route path="/MainBodyOP" element={<MainBodyOP />}>
+            MainBodyOP
+          </Route>
+        </Routes>
       </div>
     </Wrapper>
   );

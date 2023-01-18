@@ -1,0 +1,52 @@
+.wrapper {
+  --white: #fff;
+  --yellow: yellow;
+  --blue: lightblue;
+  --black: #000;
+}
+
+.wrapper.dark .mainBody {
+  background-color: var(--black);
+  color: var(--white);
+  transition: all 0.3s;
+}
+.wrapper.dark .GlobalHeader {
+  background-color: var(--black);
+  color: var(--white);
+  transition: all 0.3s;
+}
+.wrapper.dark .GlobalGnb {
+  background-color: var(--black);
+  color: var(--white);
+  transition: all 0.3s;
+}
+.wrapper.yellow .mainBody {
+  background-color: var(--black);
+  color: var(--yellow);
+  transition: all 0.3s;
+}
+.wrapper.yellow .GlobalHeader {
+  background-color: var(--black);
+  color: var(--yellow);
+  transition: all 0.3s;
+}
+.wrapper.yellow .GlobalGnb {
+  background-color: var(--black);
+  color: var(--yellow);
+  transition: all 0.3s;
+}
+.wrapper.blue .mainBody {
+  background-color: var(--black);
+  color: var(--blue);
+  transition: all 0.3s;
+}
+.wrapper.blue .GlobalHeader {
+  background-color: var(--black);
+  color: var(--blue);
+  transition: all 0.3s;
+}
+.wrapper.blue .GlobalGnb {
+  background-color: var(--black);
+  color: var(--blue);
+  transition: all 0.3s;
+}

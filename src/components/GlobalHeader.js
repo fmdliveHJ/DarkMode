@@ -8,6 +8,7 @@ const GlobalHeader = ({ toggleDark }) => {
       <button onClick={(e) => toggleDark(1)}>dark</button>
       <button onClick={(e) => toggleDark(2)}>dark-yellow</button>
       <button onClick={(e) => toggleDark(3)}>dark-blue</button>
+      header
     </Box>
   );
 };
