@@ -1,5 +1,11 @@
+import MainView from "./pages/MainView";
+
 function App() {
-  return <div className="App">초기설정</div>;
+  return (
+    <div>
+      <MainView />
+    </div>
+  );
 }
 
 export default App;
