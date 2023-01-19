@@ -1,0 +1,70 @@
+.wrapper {
+  --white: #fff;
+  --yellow: yellow;
+  --blue: lightblue;
+  --black: #000;
+  --transition: all 0.3s linear 0s;
+}
+.wrapper.light .mainBody {
+  transition: var(--transition);
+}
+.wrapper.light .GlobalHeader {
+  transition: var(--transition);
+}
+.wrapper.light .GlobalGnb {
+  transition: var(--transition);
+}
+.wrapper.dark .mainBody {
+  background-color: var(--black);
+  color: var(--white);
+  transition: var(--transition);
+}
+.wrapper.dark .GlobalHeader {
+  background-color: var(--black);
+  color: var(--white);
+  transition: var(--transition);
+}
+.wrapper.dark .GlobalGnb {
+  background-color: var(--black);
+  color: var(--white);
+  transition: var(--transition);
+}
+.wrapper.dark .GlobalGnb svg path {
+  fill: var(--white);
+}
+.wrapper.yellow .mainBody {
+  background-color: var(--black);
+  color: var(--yellow);
+  transition: var(--transition);
+}
+.wrapper.yellow .GlobalHeader {
+  background-color: var(--black);
+  color: var(--yellow);
+  transition: var(--transition);
+}
+.wrapper.yellow .GlobalGnb {
+  background-color: var(--black);
+  color: var(--yellow);
+  transition: var(--transition);
+}
+.wrapper.yellow .GlobalGnb svg path {
+  fill: var(--yellow);
+}
+.wrapper.blue .mainBody {
+  background-color: var(--black);
+  color: var(--blue);
+  transition: var(--transition);
+}
+.wrapper.blue .GlobalHeader {
+  background-color: var(--black);
+  color: var(--blue);
+  transition: var(--transition);
+}
+.wrapper.blue .GlobalGnb {
+  background-color: var(--black);
+  color: var(--blue);
+  transition: var(--transition);
+}
+.wrapper.blue .GlobalGnb svg path {
+  fill: var(--blue);
+}

@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import MainView from "./pages/MainView";
-import "./theme/theme.css";
+import "./theme/style.css";
 function App() {
   return (
     <div>

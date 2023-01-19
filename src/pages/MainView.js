@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import GlobalGnb from "../components/GlobalGnb";
 import GlobalHeader from "../components/GlobalHeader";
 import MainBody from "./MainBody";
 import styled from "styled-components";
 import MainBodyOP from "./MainBodyOP";
 import { Route, Routes } from "react-router-dom";
+import Home from "./Home";
 
 const MainView = () => {
   const [dark, setDark] = useState("");
@@ -32,20 +33,25 @@ const MainView = () => {
   };
 
   return (
-    <Wrapper className={`wrapper ${dark}`}>
-      <GlobalGnb />
-      <div style={{ width: "100%" }}>
-        <GlobalHeader toggleDark={toggleDark} />
-        <Routes>
-          <Route path="/MainBody" element={<MainBody />}>
-            MainBody
-          </Route>
-          <Route path="/MainBodyOP" element={<MainBodyOP />}>
-            MainBodyOP
-          </Route>
-        </Routes>
-      </div>
-    </Wrapper>
+    <>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+      </Routes>
+      <Wrapper className={`wrapper ${dark}`}>
+        <GlobalGnb />
+        <div style={{ width: "100%" }}>
+          <GlobalHeader toggleDark={toggleDark} />
+          <Routes>
+            <Route path="/MainBody" element={<MainBody />}>
+              MainBody
+            </Route>
+            <Route path="/MainBodyOP" element={<MainBodyOP />}>
+              MainBodyOP
+            </Route>
+          </Routes>
+        </div>
+      </Wrapper>
+    </>
   );
 };
 

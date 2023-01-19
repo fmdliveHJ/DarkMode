@@ -1,0 +1,84 @@
+.wrapper {
+  --white: #fff;
+  --yellow: yellow;
+  --blue: lightblue;
+  --black: #000;
+  --transition: all 0.3s linear 0s;
+  &.light {
+    .mainBody {
+      transition: var(--transition);
+    }
+    .GlobalHeader {
+      transition: var(--transition);
+    }
+    .GlobalGnb {
+      transition: var(--transition);
+    }
+  }
+  &.dark {
+    .mainBody {
+      background-color: var(--black);
+      color: var(--white);
+      transition: var(--transition);
+    }
+    .GlobalHeader {
+      background-color: var(--black);
+      color: var(--white);
+      transition: var(--transition);
+    }
+    .GlobalGnb {
+      background-color: var(--black);
+      color: var(--white);
+      transition: var(--transition);
+      svg {
+        path {
+          fill: var(--white);
+        }
+      }
+    }
+  }
+  &.yellow {
+    .mainBody {
+      background-color: var(--black);
+      color: var(--yellow);
+      transition: var(--transition);
+    }
+    .GlobalHeader {
+      background-color: var(--black);
+      color: var(--yellow);
+      transition: var(--transition);
+    }
+    .GlobalGnb {
+      background-color: var(--black);
+      color: var(--yellow);
+      transition: var(--transition);
+      svg {
+        path {
+          fill: var(--yellow);
+        }
+      }
+    }
+  }
+  &.blue {
+    .mainBody {
+      background-color: var(--black);
+      color: var(--blue);
+      transition: var(--transition);
+    }
+    .GlobalHeader {
+      background-color: var(--black);
+      color: var(--blue);
+      transition: var(--transition);
+    }
+    .GlobalGnb {
+      background-color: var(--black);
+      color: var(--blue);
+      transition: var(--transition);
+      svg {
+        path {
+          fill: var(--blue);
+        }
+      }
+    }
+  }
+}
